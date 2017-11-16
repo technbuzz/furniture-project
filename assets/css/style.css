@@ -1,3 +1,11 @@
+body{
+	font-family: 'Work Sans', sans-serif;
+}
+
+.title h1{
+	font-weight: 600;
+}
+
 .collection-meta form{
     height: 55px;
 }
