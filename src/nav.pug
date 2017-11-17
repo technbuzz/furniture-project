@@ -1,23 +1,30 @@
 header
-  nav.navbar.navbar-expand-lg.navbar-light.bg-light
-  a.navbar-brand(href='#') Navbar
-  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#primary', aria-controls='primary', aria-expanded='false', aria-label='Toggle navigation')
-    span.navbar-toggler-icon
-  #primary.collapse.navbar-collapse
-    ul.navbar-nav.mr-auto
-      li.nav-item.active
-        a.nav-link(href='#')
-          | Home 
-          span.sr-only (current)
-      li.nav-item
-        a.nav-link(href='#') Link
-      li.nav-item.dropdown
-        a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-          | Dropdown
-        .dropdown-menu(aria-labelledby='navbarDropdown')
-          a.dropdown-item(href='#') Action
-          a.dropdown-item(href='#') Another action
-          .dropdown-divider
-          a.dropdown-item(href='#') Something else here
-      li.nav-item
-        a.nav-link.disabled(href='#') Disabled
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light.px-sm-5
+    a.navbar-brand(href='#') Navbar
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#primary', aria-controls='primary', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #primary.collapse.navbar-collapse.ml-md-5.justify-content-between
+      ul.navbar-nav
+        li.nav-item.active
+          a.nav-link(href='#')
+            | Home 
+            span.sr-only (current)
+        li.nav-item
+          a.nav-link(href='#') Link
+        li.nav-item.dropdown
+          a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            | Dropdown
+          .dropdown-menu(aria-labelledby='navbarDropdown')
+            a.dropdown-item(href='#') Action
+            a.dropdown-item(href='#') Another action
+            .dropdown-divider
+            a.dropdown-item(href='#') Something else here
+        li.nav-item
+          a.nav-link.disabled(href='#') Disabled
+      ul.navbar-nav
+        li.nav-item
+          a.nav-link(href='#')
+            | Search 
+        li.nav-item
+          a.nav-link(href='#')
+            | Cart
