@@ -9,3 +9,15 @@ body{
 .collection-meta form{
     height: 55px;
 }
+
+.prod-single__det h1{
+	font-size: 2.1875rem;
+}
+
+.prod-single__price, .prod-single__title{
+  font-weight: 600;
+}
+
+.prod-single__cta{
+
+}
