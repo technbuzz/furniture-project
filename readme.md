@@ -16,6 +16,7 @@
 
 ## Search Page
 - First load has a big search bar. 
+- Invalid Search Form
 - After search it has items in table layout i-e one item per row with pagination
 
 # Notes
