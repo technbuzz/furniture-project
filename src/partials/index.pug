@@ -20,9 +20,24 @@ section.home-collection-list.mt-5
             img(src=collection, alt="", class="img-fluid")
             .card-img-overlay.d-flex.justify-content-center.align-items-center
               h3.card-title Rug
-  
+
+mixin product(img, title, price)
+  a(href="#" class="card card--product col-12 col-sm-6 col-md-4 col-lg-3 border-0")
+    img.card-img-top(src=img, alt='')
+    .card-body
+      .card-title
+        h6
+          | #{title}
+      .card-text Rs.#{price}
   
 
+section.home-featured-collection.mt-5
+  .container
+    h5.home-section-header.text-center.mb-5 Featured Collection
+    .row
+      - var products = ['assets/images/ss-ll-tl-pmy-3-2_250x250@2x.jpg','assets/images/ss-ll-tl-wmbr-5-1_250x250@2x.jpg','assets/images/ss-ll-tl-wsbr-2_1_250x250@2x.jpg','assets/images/ss-ll-tl-pmy-3-2_250x250@2x.jpg','assets/images/ss-ll-tl-wmbr-5-1_250x250@2x.jpg','assets/images/ss-ll-tl-wsbr-2_1_250x250@2x.jpg']
+      each prod in products
+        +product(prod, 'Wooden Box Lamp', '2,500.00')
 
 
 

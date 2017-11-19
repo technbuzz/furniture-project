@@ -34,7 +34,15 @@ h1,h2,h3,h4,h5,h6{
 /*------------------------------------*\
 						Collection Rules                      
 \*------------------------------------*/
+.card--product{
+	color: #000;
+}
 
+.card--product:hover{
+	opacity: 0.6;
+	color: #000;
+	text-decoration: none;
+}
 
 .collection-meta form{
     height: 55px;

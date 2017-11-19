@@ -2,6 +2,15 @@ include ../header.pug
 
 include ../nav.pug
 
+mixin product(img, title, price)
+  a(href="#" class="card card--product col-12 col-sm-6 col-md-4 col-lg-3 border-0")
+    img.card-img-top(src=img, alt='')
+    .card-body
+      .card-title
+        h6
+          | #{title}
+      .card-text Rs.#{price}
+
 
 .container
   section.title.text-center.py-5
@@ -28,13 +37,7 @@ main.container.mt-5
   .row
     - var products = ['assets/images/ss-ll-tl-pmy-3-2_250x250@2x.jpg','assets/images/ss-ll-tl-wmbr-5-1_250x250@2x.jpg','assets/images/ss-ll-tl-wsbr-2_1_250x250@2x.jpg','assets/images/ss-ll-tl-pmy-3-2_250x250@2x.jpg','assets/images/ss-ll-tl-wmbr-5-1_250x250@2x.jpg','assets/images/ss-ll-tl-wsbr-2_1_250x250@2x.jpg']
     each prod in products
-      .card.col-12.col-sm-6.col-md-4.col-lg-3.border-0
-        img.card-img-top(src= prod, alt='')
-        .card-body
-          .card-title
-            h6
-              | Wooden Box Lamp
-          .card-text Rs.2,500.00
+      +product(prod, 'Wooden Box Lamp', '2,500.00')
 
 nav(aria-label="...", class="mt-4 mt-5 d-flex justify-content-center")
   ul.pagination
@@ -51,6 +54,5 @@ nav(aria-label="...", class="mt-4 mt-5 d-flex justify-content-center")
     li.page-item
       a.page-link(href="#") Next
 
-
-
 include ../footer.pug
+
