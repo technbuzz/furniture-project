@@ -1,7 +1,27 @@
 include ../header 
 include ../nav 
 
+mixin searchItem(img)
+  .media.pt-4.pb-4.bb.search-item
+    img.mr-3(src=img, alt="", width="95")
+    .media-body.align-self-center
+      h6.mt-0 Alcee Chair
+    .search-item--price 
+      p Rs.9,5000.00
+
+main.pt-5.pb-5.page-search--result.d-flex.flex-column.justify-content-center.align-items-center
+  h5.text-uppercase.letter-spacing 51 results for "chair"
+  form.form-inline
+    .input-group
+      input.form-control(type="text", placeholder="Search", aria-label="Search Product Catalog")
+      span.input-group-btn
+        button.btn.btn-danger(type="submit") Submit
+
+.container
+  - var searchItems = ['assets/images/search-item-1.jpg','assets/images/search-item-2.jpg','assets/images/search-item-3.jpg','assets/images/search-item-1.jpg','assets/images/search-item-2.jpg','assets/images/search-item-3.jpg']
+  each item in searchItems
+    +searchItem(item)
 
 
 
-incude ../footer
+include ../footer
