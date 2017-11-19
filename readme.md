@@ -17,3 +17,7 @@
 ## Search Page
 - First load has a big search bar. 
 - After search it has items in table layout i-e one item per row with pagination
+
+# Notes
+
+1. Images for **collection list** and **product list** should be in squares otherwise uneven height and squishy images are observed.
