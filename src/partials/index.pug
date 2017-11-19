@@ -1,0 +1,31 @@
+include ../header 
+include ../nav 
+
+section.banner
+  .card.bg-dark.border-0.rounded-0.text-center.text-white
+    img(src="assets/images/splash.jpg", alt="")
+    .card-img-overlay.align-items-center.d-flex.flex-column.justify-content-center
+      h1.card-title WHERE WOOD MEETS ARTISTS
+      h4.card-text We just dont create things, we build them with our bare hands. 
+      a(href="#", class="btn btn-light mt-3") SHOP NOW
+
+section.home-collection-list.mt-5
+  .container
+    h5.home-section-header.text-center.mb-5 Collection List
+    .row
+      - var collections = ['assets/images/collection-rug.jpg','assets/images/collection-bean-bag.jpg','assets/images/collection-shelf.jpg','assets/images/collection-rug.jpg','assets/images/collection-bean-bag.jpg','assets/images/collection-shelf.jpg']
+      each collection in collections
+        .col-md-6.col-lg-4.mb-4
+          a(href="#" class="card text-white bg-dark rounded-0 border-0")
+            img(src=collection, alt="")
+            .card-img-overlay.d-flex.justify-content-center.align-items-center
+              h3.card-title Rug
+  
+  
+
+
+
+
+
+
+include ../footer
