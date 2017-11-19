@@ -1,6 +1,27 @@
+/*------------------------------------*\
+							General                      
+\*------------------------------------*/
+
 body{
 	font-family: 'Work Sans', sans-serif;
 }
+
+/*------------------------------------*\
+						Homepage Rules                      
+\*------------------------------------*/
+.banner{
+	max-height: 450px;
+	overflow: hidden;
+}
+
+.banner .card-title{
+	font-weight: 600;
+}
+
+/*------------------------------------*\
+						Collection Rules                      
+\*------------------------------------*/
+
 
 .title h1{
 	font-weight: 600;
