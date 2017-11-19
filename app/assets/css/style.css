@@ -6,6 +6,10 @@ body{
 	font-family: 'Work Sans', sans-serif;
 }
 
+h1,h2,h3,h4,h5,h6{
+	font-weight: 600;
+}
+
 /*------------------------------------*\
 						Homepage Rules                      
 \*------------------------------------*/
@@ -14,8 +18,17 @@ body{
 	overflow: hidden;
 }
 
-.banner .card-title{
-	font-weight: 600;
+.home-section-header{
+	text-transform: uppercase;
+}
+
+.home-collection-list .card{
+	max-height: 350px;
+	overflow: hidden;
+}
+
+.home-collection-list .card:hover{
+	opacity: .6;
 }
 
 /*------------------------------------*\
@@ -23,20 +36,12 @@ body{
 \*------------------------------------*/
 
 
-.title h1{
-	font-weight: 600;
-}
-
 .collection-meta form{
     height: 55px;
 }
 
 .prod-single__det h1{
 	font-size: 2.1875rem;
-}
-
-.prod-single__price, .prod-single__title{
-  font-weight: 600;
 }
 
 .prod-single__cta{
