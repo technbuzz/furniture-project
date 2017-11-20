@@ -2,11 +2,12 @@ include ../header
 include ../nav
 
 main.page-search.d-flex.flex-column.justify-content-center.align-items-center
-  h5.text-uppercase.letter-spacing Search our site
-  form.form-inline
+  h5.mb-3.text-uppercase.letter-spacing Search our site
+  form.form-inline.mb-3
     .input-group
       input.form-control(type="text", placeholder="Search", aria-label="Search Product Catalog")
       span.input-group-btn
         button.btn.btn-danger(type="submit") Submit
+  p Your search for "Chords" did not yield any results.
 
 include ../footer
