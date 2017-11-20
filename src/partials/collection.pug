@@ -39,20 +39,7 @@ main.container.mt-5
     each prod in products
       +product(prod, 'Wooden Box Lamp', '2,500.00')
 
-nav(aria-label="...", class="mt-4 mt-5 d-flex justify-content-center")
-  ul.pagination
-    li.page-item.disabled
-      a.page-link(href="#", tabindex="-1") Previous
-    li.page-item
-      a.page-link(href="#") 1
-    li.page-item.active
-      a.page-link(href="#") 
-        | 2 
-        span.sr-only (current)
-    li.page-item
-      a.page-link(href="#") 3
-    li.page-item
-      a.page-link(href="#") Next
+include ../pagination.pug
 
 include ../footer.pug
 
