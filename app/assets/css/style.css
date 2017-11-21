@@ -92,3 +92,24 @@ h1,h2,h3,h4,h5,h6{
 .page-cart-empty{
 	min-height: 75vh;
 }
+
+.cart-table td{
+	border-bottom: none;
+}
+
+.cart-table tbody td{
+	vertical-align: middle;
+}
+
+.cart-table tbody tr td:first-child{
+	width: 50%;
+}
+
+.cart-table input[type='number']{
+	width: 20%;
+}
+
+.cart-table tbody tr td:not(:first-child),
+thead th:not(:first-child){
+	text-align: center;
+}

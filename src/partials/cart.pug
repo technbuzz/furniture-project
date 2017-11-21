@@ -1,0 +1,42 @@
+include ../header
+include ../nav
+
+mixin cartItem(img)
+	.media.search-item
+		img.mr-3(src=img, alt="", width="95")
+		.media-body.align-self-center
+			h6.mt-0 Alcee Chair
+			a.btn.btn-outline-danger.btn-sm.text-uppercase Remove
+
+		
+main.search-results
+	h4.text-center.mb-5 Your card
+
+	.container
+		table.table.cart-table
+			thead
+				tr 
+					th(scope="col") Product
+					th(scope="col") Price
+					th(scope="col") Quantity
+					th(scope="col") Total
+			tbody
+				tr.bb.pt-4.pb-4
+					td
+						+cartItem('assets/images/cart-item-1.jpg')
+					td Rs.4,500.00
+					td <input type="number" min="0" value="1" class="text-center">
+					td Rs.4,500.00
+			tfoot
+				tr
+					td
+					td
+					td Grand Total
+					td Rs. 7,399.00
+				tr
+					td
+					td
+					td.text-right 
+						a.btn.btn-light(href="#") Continue Shopping
+					td
+						a.btn.btn-danger(href="#") Check Out
