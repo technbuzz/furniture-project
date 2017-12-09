@@ -87,6 +87,16 @@ del{
 \*------------------------------------*/
 .contact-bar{
 	flex-basis: 100%;
+	text-align: right;
+}
+
+.contact-bar .whatsapp{
+	text-decoration: none;
+	color: rgba(0,0,0,.7);
+}
+
+.contact-bar .whatsapp:hover{
+	color: rgba(0,0,0,.5);
 }
 
 /*------------------------------------*\
@@ -182,4 +192,18 @@ del{
 .cart-table tbody tr td:not(:first-child),
 thead th:not(:first-child){
 	text-align: center;
+}
+
+/*------------------------------------*\
+			Media Queries                      
+\*------------------------------------*/
+@media (max-width: 576px){
+	.logo{
+		width: 250px;
+	}
+	.contact-bar{
+		text-align:left;
+	}
+
+	
 }

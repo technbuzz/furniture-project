@@ -1,11 +1,13 @@
 header
   nav.navbar.navbar-expand-lg.navbar-light.bg-light.px-sm-5
-    a.navbar-brand(href='#') <img src="assets/images/logo.png" alt="Handmade Charisma Logo">
+    a.navbar-brand(href='#') <img src="assets/images/logo.png" alt="Handmade Charisma Logo" class="img-fluid logo">
     button.navbar-toggler(type='button', data-toggle='collapse', data-target='#primary', aria-controls='primary', aria-expanded='false', aria-label='Toggle navigation')
       span.navbar-toggler-icon
     #primary.collapse.navbar-collapse.ml-md-5.justify-content-between.flex-wrap
-      .contact-bar.text-right
-        span.text-muted <i class="icon-whatsapp"></i> Whatsapp : +92-312-6424288 <a class="mx-3" href="#"><i class="icon-facebook"></i></a> <a href="#"><i class="icon-pinterest"></i></a>
+      .contact-bar
+        a(href="#",class="whatsapp") <i class="icon-whatsapp"></i> Whatsapp : +92-312-6424288 
+        a(class="mx-3", href="#") <i class="icon-facebook"></i>
+        a(href="#") <i class="icon-pinterest"></i>
       ul.navbar-nav
         li.nav-item.active
           a.nav-link(href='index.html')
