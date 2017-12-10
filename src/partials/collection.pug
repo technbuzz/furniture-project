@@ -10,36 +10,35 @@ mixin product(img, title, price)
         h6
           | #{title}
       .card-text Rs.#{price}
+      //- a.card-action.btn.btn-danger.btn-lg(href="") Add to cart 
 
 
 .container
   section.title.text-center.py-5
     h1 Lamp
 
-section.collection-meta.border.border-left-0.border-right-0.border-secondary
-  .container
-    form.d-flex.justify-content-between.align-items-stretch(action='')
-      .row
-        label.sr-only(for='filter') Filter Products
-        select#filter.border-0(name='')
-          option(value='1') One
-          option(value='2') Two
-          option(value='3') Three
-      span.align-self-center
-        em 113 Products
-      .row
-        label(for='')
-        select.border-0(name='', id='')
-          option(value='1') Featured
-          option(value='2') Best Selling
-          option(value='3') Price, low to high
+//- section.collection-meta.border.border-left-0.border-right-0.border-secondary
+//-   .container
+//-     form.d-flex.justify-content-between.align-items-stretch(action='')
+//-       .row
+//-         label.sr-only(for='filter') Filter Products
+//-         select#filter.border-0(name='')
+//-           option(value='1') One
+//-           option(value='2') Two
+//-           option(value='3') Three
+//-       span.align-self-center
+//-         em 113 Products
+//-       .row
+//-         label(for='')
+//-         select.border-0(name='', id='')
+//-           option(value='1') Featured
+//-           option(value='2') Best Selling
+//-           option(value='3') Price, low to high
 main.container.mt-5
   .row
     - var products = ['assets/images/ss-ll-tl-pmy-3-2_250x250@2x.jpg','assets/images/ss-ll-tl-wmbr-5-1_250x250@2x.jpg','assets/images/ss-ll-tl-wsbr-2_1_250x250@2x.jpg','assets/images/ss-ll-tl-pmy-3-2_250x250@2x.jpg','assets/images/ss-ll-tl-wmbr-5-1_250x250@2x.jpg','assets/images/ss-ll-tl-wsbr-2_1_250x250@2x.jpg']
     each prod in products
-      +product(prod, 'Wooden Box Lamp', '2,500.00')
-
-include ../pagination.pug
+      +product(prod, 'Wooden Box Lamp', '2,500')
 
 include ../footer.pug
 
