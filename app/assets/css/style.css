@@ -174,7 +174,7 @@ del{
 }
 
 .cart-table td{
-	border-bottom: none;
+	border: none;
 }
 
 .cart-table tbody td{
@@ -185,10 +185,6 @@ del{
 	width: 50%;
 }
 
-.cart-table input[type='number']{
-	width: 20%;
-}
-
 .cart-table tbody tr td:not(:first-child),
 thead th:not(:first-child){
 	text-align: center;
@@ -197,6 +193,25 @@ thead th:not(:first-child){
 /*------------------------------------*\
 			Media Queries                      
 \*------------------------------------*/
+
+@media (min-width: 576px){
+	.cart-table input[type='number'] {
+    width: 70%;
+	}
+}
+
+@media (min-width: 768px){
+	.cart-table input[type='number'] {
+    width: 50%;
+	}
+}
+
+@media (min-width: 991px){
+	.cart-table input[type='number'] {
+    width: 20%;
+	}
+}
+
 @media (max-width: 576px){
 	.logo{
 		width: 250px;
@@ -205,5 +220,45 @@ thead th:not(:first-child){
 		text-align:left;
 	}
 
+	.cart-table, .cart-table body{
+		display: block;
+	}
+
+	.cart-table tbody{
+		border-top: 1px solid #E8E9EB;
+	}
+
+	.cart-table thead{
+		display: none;
+	}
+
+	.cart-table tr{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.cart-table td{
+		padding-left:0;
+		padding-right: 0;
+		flex-basis: 50%;
+		display: block;
+	}
+
+	.cart-table td:first-child,
+	.cart-table td:nth-child(3){
+		flex-basis: 70%;
+	}
+
+	.cart-table td:nth-child(2),
+	.cart-table td:last-child{
+    flex-basis: 30%;
+    align-self: center;
+	}
+
+
+
+	.cart-table input[type='number'] {
+    width: 20%;
+	}
 	
 }

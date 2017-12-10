@@ -25,20 +25,13 @@ main.search-results
 					td
 						+cartItem('assets/images/cart-item-1.jpg')
 					td Rs.4,500.00
-					td <input type="number" min="0" value="1" class="text-center">
+					td <span class="d-inilne d-sm-none pr-5">Quantity</span> <input type="number" min="0" value="1" class="text-center">
 					td Rs.4,500.00
-			tfoot
-				tr
-					td
-					td
-					td Grand Total
-					td Rs. 7,399.00
-				tr
-					td
-					td
-					td.text-right 
-						a.btn.btn-light(href="#") Continue Shopping
-					td
-						a.btn.btn-danger(href="#") Check Out
+			
+		section.text-right
+				p Grand Total <strong>Rs. 7,399.00</strong>
+		section.text-right
+					a.btn.btn-light(href="#") Continue Shopping
+					a.btn.btn-danger(href="#") Check Out
 
 include ../footer
